@@ -3,47 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Basic Website</title>
-    <style>
+    <title>Keith Williams - Resume</title>
+    <script src="https://kit.fontawesome.com/6012395552.js" crossorigin="anonymous"></script>    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 0;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
         }
-        header {
-            background-color: #f4f4f4;
-            padding: 1rem;
-            text-align: center;
+        .container {
+            display: flex;
+            flex-wrap: wrap;
         }
-        main {
-            padding: 1rem;
-        }
-        footer {
-            background-color: #f4f4f4;
-            padding: 1rem;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
+        .section {
             width: 100%;
+            margin-bottom: 30px;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .grid-item {
+            flex: 1 0 100%;
+            margin-bottom: 20px;
+        }
+        @media (min-width: 768px) {
+            .grid-item {
+                flex: 1 0 50%;
+            }
+        }
+        @media (min-width: 992px) {
+            .grid-item {
+                flex: 1 0 33.33%;
+            }
+        }
+        h1, h2, h3 {
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        h3 {
+            font-size: 1.3em;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin-bottom: 5px;
+        }
+        .fa {
+            margin-right: 10px;
+        }
+        .experience-item {
+            margin-bottom: 20px;
+        }
+        .experience-item h3 {
+            margin-bottom: 5px;
+        }
+        .experience-item p {
+            font-style: italic;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Keith Williams</h1>
+        <h2>Visionary Technologist, Educator, and Business Strategist</h2>
     </header>
 
-    <main>
-        <h2>About</h2>
-        <p>This is a basic HTML5 website template.</p>
+    <section class="contact-info">
+        <p><i class="fa fa-map-marker"></i> Greater Pittsburgh Region</p>
+        <p><i class="fa fa-envelope"></i> keith@webizly.com</p>
+        <p><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/keithwilliams5/">LinkedIn</a></p>
+        <p><i class="fa fa-github"></i> <a href="https://github.com/kaw393939">GitHub</a></p>
+        <p><i class="fa fa-globe"></i> <a href="https://kaw393939.github.io/resume/">Website</a></p>
+    </section>
 
-        <h2>Content</h2>
-        <p>Add your main content here.</p>
-    </main>
+    <section class="section">
+        <h2>Professional Summary</h2>
+        <p>Innovative technology leader with over 20 years of experience driving digital transformation and educational advancement. Successfully secured over $1 million in startup investment, demonstrating business acumen and investor confidence. Pioneered a bachelor's degree program in Web and Information Systems at NJIT, developing 8 cutting-edge college-level courses. Proven track record of managing diverse, global teams to deliver successful SaaS applications. Combines deep technical expertise with strategic vision to optimize business processes and foster technological innovation.</p>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </footer>
+    <section class="section">
+        <h2>Skills</h2>
+        <div class="grid">
+            <div class="grid-item">
+                <h3><i class="fa fa-code"></i> Software Development & Architecture</h3>
+                <ul>
+                    <li>Full-Stack Development (PHP, Java, JavaScript, Python)</li>
+                    <li>Microservice Architecture</li>
+                    <li>Design Patterns</li>
+                    <li>RESTful APIs & GraphQL</li>
+                    <li>Test-Driven Development (TDD)</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3><i class="fa fa-rocket"></i> Emerging Technologies</h3>
+                <ul>
+                    <li>Generative AI & Large Language Models</li>
+                    <li>Retrieval Augmented Generation (RAG)</li>
+                    <li>Model Fine-tuning</li>
+                    <li>Blockchain & Smart Contracts</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3><i class="fa fa-cloud"></i> Cloud & DevOps</h3>
+                <ul>
+                    <li>Docker & Containerization</li>
+                    <li>CI/CD Pipelines</li>
+                    <li>AWS, Azure, Google Cloud Platform</li>
+                    <li>Kubernetes Orchestration</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3><i class="fa fa-database"></i> Database Management</h3>
+                <ul>
+                    <li>SQL (MySQL, PostgreSQL)</li>
+                    <li>NoSQL (MongoDB, Redis)</li>
+                    <li>Data Modeling & Optimization</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3><i class="fa fa-users"></i> Project Management & Leadership</h3>
+                <ul>
+                    <li>Agile & Scrum Methodologies</li>
+                    <li>Cross-functional Team Leadership</li>
+                    <li>Strategic Technology Planning</li>
+                    <li>Risk Management & Mitigation</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3><i class="fa fa-lightbulb-o"></i> Business Strategy & Innovation</h3>
+                <ul>
+                    <li>Product Development & Management</li>
+                    <li>Lean Startup Methodology</li>
+                    <li>Digital Transformation Initiatives</li>
+                    <li>Technology Roadmapping</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3><i class="fa fa-graduation-cap"></i> Education & Communication</h3>
+                <ul>
+                    <li>Curriculum Development</li>
+                    <li>Instructional Design</li>
+                    <li>Public Speaking & Presentations</li>
+                    <li>Technical Writing & Documentation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Director of Web and Information Systems Program</h3>
+            <p>New Jersey Institute of Technology | December 2007 - Present | Newark, NJ</p>
+            <ul>
+                <li>Spearheaded the development of a comprehensive bachelor's degree program in Web and Information Systems, creating 8 innovative college-level courses.</li>
+                <li>Designed and implemented cutting-edge curricula in online marketing, content management systems, Agile project management, and mobile application development.</li>
+                <li>Cultivated industry partnerships, resulting in course recognition by Fortune 500 companies as premier preparation for junior software development roles.</li>
+                <li>Mentored and guided students, significantly enhancing their employability and career prospects in the tech industry.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Founder & CEO</h3>
+            <p>Webizly | January 2003 - Present</p>
+            <ul>
+                <li>Secured over $1 million in startup investment, demonstrating strong business acumen and investor confidence.</li>
+                <li>Orchestrated the development of high-impact software solutions, including social network platforms for state-wide talent networks and healthcare professionals.</li>
+                <li>Led cross-functional teams in delivering custom software products, consistently meeting client expectations and driving business growth.</li>
+                <li>Implemented agile methodologies to enhance project efficiency and product quality.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Chief Technology Officer</h3>
+            <p>Anthiem Ventures | February 2013 - February 2017 | Greater New York City Area</p>
+            <ul>
+                <li>Directed the development and launch of two successful SaaS products: Showd.me (peer-to-peer learning system) and WrkBench (real-time collaborative visual communication tool).</li>
+                <li>Managed a diverse team of developers, DevOps specialists, designers, and QA professionals across multiple countries.</li>
+                <li>Implemented strategic technology decisions that drove product innovation and market competitiveness.</li>
+                <li>Optimized development processes, resulting in improved product quality and faster time-to-market.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Ongoing Learning & Professional Development</h2>
+        <ul>
+            <li>Presenter at <strong>RTM Summer Higher Education CIO Congress</strong>, sharing insights on emerging technologies in education.</li>
+            <li>Currently leading the development of an enterprise AI RAG system for code analysis, focusing on automated testing, security enhancements, and documentation generation.</li>
+            <li>Regular attendee at tech conferences and workshops to stay at the forefront of industry trends and innovations.</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Projects</h2>
+        <h3>Enterprise AI RAG System</h3>
+        <ul>
+            <li>Developing an advanced system to ingest and analyze codebases using AI technologies.</li>
+            <li>Implementing features for identifying gaps in automated testing, enhancing security measures, and optimizing code performance.</li>
+            <li>Creating AI-driven documentation generation for user stories and acceptance criteria.</li>
+        </ul>
+    </section>
 </body>
 </html>
