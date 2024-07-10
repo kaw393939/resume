@@ -9,7 +9,7 @@
 **Website:**[https://kaw393939.github.io/resume/](https://kaw393939.github.io/resume/)
 
 ## Professional Summary
-
+ 
 Innovative technology leader with over 20 years of experience driving digital transformation and educational advancement. Successfully secured over $1 million in startup investment, demonstrating business acumen and investor confidence. Pioneered a bachelor's degree program in Web and Information Systems at NJIT, developing 8 cutting-edge college-level courses. Proven track record of managing diverse, global teams to deliver successful SaaS applications. Combines deep technical expertise with strategic vision to optimize business processes and foster technological innovation.
 
 ## Skills
