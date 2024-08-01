@@ -42,6 +42,7 @@ jobs:
   deploy:
     name: Deploy to GitHub Pages
     needs: test
+    if: success()
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -51,10 +52,13 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      # Add a build step here if needed
+      # - name: Build site
+      #   run: npm run build  # or whatever command builds your site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: './docs'  # Update this to your site's build output directory if different
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
